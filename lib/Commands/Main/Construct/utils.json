@@ -138,11 +138,30 @@
             "description": "Local onde o módulo pode ser encontrado.",
             "type": "Object",
             "value": {
+                "Memes": [
+                    "greyscale",
+                    "gay",
+                    "affect",
+                    "invert",
+                    "slap",
+                    "kiss",
+                    "beautiful",
+                    "trash",
+                    "memes"
+                ],
                 "Default": [
-                    "default"
+                    "default",
+                    "fallback"
+                ],
+                "Nasa": [
+                    "nasa",
+                    "apod",
+                    "space"
                 ],
                 "Ping": [
-                    "ping"
+                    "ping",
+                    "pcinfo",
+                    "sessioninfo"
                 ],
                 "Stickers": [
                     "sticker",
