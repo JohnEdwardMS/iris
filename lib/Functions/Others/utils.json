@@ -35,6 +35,8 @@
         "sleep": "sleep",
         "buffer": "buffer",
         "blur": "blur",
+        "farpc": "farpc",
+        "findkey": "findkey",
         "repl": "repl",
         "scale": "scale",
         "reset": "reset",
@@ -143,6 +145,50 @@
                 }
             },
             "description": "Adquire uma mídia de URL e converte em Buffer.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "findkey": {
+            "arguments": {
+                "myObject": {
+                    "description": "Object de variaveis de dados.",
+                    "type": "Boolean / Object",
+                    "value": false
+                },
+                "findKey": {
+                    "description": "Array com nome das keys para encontrar.",
+                    "type": "Boolean / Array",
+                    "value": false
+                },
+                "typeKey": {
+                    "description": "Array com os tipos de valor que a key deve possuir.",
+                    "type": "Boolean / Array",
+                    "value": false
+                }
+            },
+            "description": "Localiza um valor de object pela sua key.",
+            "type": "Boolean / Function",
+            "value": false
+        },
+        "farpc": {
+            "arguments": {
+                "myObject": {
+                    "description": "Object de variaveis de dados.",
+                    "type": "Boolean / Object",
+                    "value": false
+                },
+                "findText": {
+                    "description": "String para encontrar.",
+                    "type": "String",
+                    "value": ""
+                },
+                "newText": {
+                    "description": "Valor para inserir na troca.",
+                    "type": "String",
+                    "value": ""
+                }
+            },
+            "description": "Substitui um texto em todas as keys especificadas de uma object.",
             "type": "Boolean / Function",
             "value": false
         },

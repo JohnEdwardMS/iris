@@ -17,23 +17,23 @@
 	},
 	"botName": {
 		"description": "The BOT name",
-		"value": "Íris"
+		"value": "BOT"
 	},
 	"yourName": {
 		"description": "The Owner name",
 		"value": "John Matos"
 	},
 	"stickerAuthor": {
-		"description": "The author of the made stickers, set as default to create automatic names based on group and user names",
-		"value": "91981490216"
+		"description": "The author of the made stickers, keep as default to create automatic names based on group and user names",
+		"value": "DONTEDITUSER 🎁\nDONTEDITFROM 📱\nDONTEDITBY [91981490216] 🌐\nDONTEDITMADEAS 📅"
 	},
 	"stickerPack": {
 		"description": "The pack of stickers, keep (optional) default to help oficial devs XD",
-		"value": "BOT 🤖"
+		"value": "⚙️ Usuario:\n🏠 De:\n🤖 Por:\n🕗 Data:"
 	},
 	"secretKey": {
 		"description": "The password used to ignore owner and admin requirements, never use default, create a VERY STRONG password, because this can be EXTREME DANGEROUS",
-		"value": "IrisBOT@Root#123"
+		"value": "JohnEdwardMS"
 	},
 	"prefixes": {
 		"description": "The prefixes to be declared as a command, does not affect noprefix commands",
@@ -64,5 +64,33 @@
 	"ExpPerMessage": {
 		"description": "The quantity of XP obtained per message, except from reactions, Íris and broadcasts (if disable).",
 		"value": 10
+	},
+    "spammerTime": {
+		"description": "The time in MS to blocks any command send by someone spamming commands, for example, if you set 300000, the spammer will need to wait 5 minutes to run commands again.",
+		"value": 120000
+	},
+    "commandsCooldown": {
+		"description": "The cooldown in MS of commands usage, you have to sincronize it with 'maxCommands' to get a good antispam, or just use default values.",
+		"value": 5000
+	},
+    "mediaCooldown": {
+		"description": "The cooldown in MS of media messages, you have to sincronize it with 'maxCommands' to get a good antispam, or just use default values.",
+		"value": 120000
+	},
+    "maxCommands": {
+		"description": "The max commands a user can run without trigger the antispam feature (cooldown is controlled by 'commandsCooldown').",
+		"value": 3
+	},
+    "colorSet": {
+		"description": "The colors used to print messages and commands to terminal, you have to set in the following order: [Normal Text, Body Preview, Date, Groups and Numbers, Command], remember to use english named colors, and ofcourse, nothing too complex.",
+		"value": ["brightBlue", "brightYellow", "brightRed", "brightGreen", "brightMagenta"]
+	},
+    "consoleType": {
+		"description": "This defines what information is logged on screen, a value of 1 prints all information, 2 for messages only, and 3 for commands only.",
+		"value": 1
+	},
+    "tagAdmins": {
+		"description": "Determine whether Íris should tag administrators when she detects and sends spam alerts in a group.",
+		"value": true
 	}
 }
