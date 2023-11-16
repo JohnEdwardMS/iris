@@ -231,14 +231,6 @@
                     "g",
                     "gifsticker"
                 ],
-                "YouTube": [
-                    "play",
-                    "youtube",
-                    "video",
-                    "downvideo",
-                    "downaudio",
-                    "videosearch"
-                ],
                 "Handlers": [
                     "antifake",
                     "handlers",
