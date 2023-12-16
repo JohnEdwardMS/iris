@@ -9,7 +9,7 @@
 	},
 	"botName": {
 		"description": "Defines the name of the BOT.",
-		"value": "BOT"
+		"value": "BOT Rabuda"
 	},
 	"codeReload": {
 		"description": "Enables automatic code reloading, eliminating the need for restarts, can cause bugs.",
