@@ -9,7 +9,7 @@
 	},
 	"botName": {
 		"description": "Defines the name of the BOT.",
-		"value": "BOT Rabuda"
+		"value": "Loli Rabuda"
 	},
 	"codeReload": {
 		"description": "Enables automatic code reloading, eliminating the need for restarts, can cause bugs.",
@@ -75,7 +75,18 @@
 	"prefixes": {
 		"description": "Defines the prefixes recognized as commands. Does not affect noprefix commands.",
 		"value": [
-			"/"
+			"\\",
+			"/",
+			"$",
+			"^",
+			"=",
+			"+",
+			"!",
+			"&",
+			":",
+			";",
+			">",
+			"<"
 		]
 	},
 	"secureGroup": {
@@ -88,7 +99,7 @@
 	},
 	"spammerTime": {
 		"description": "Sets the time in milliseconds to block any commands sent by someone spamming. For example, if set to 300000, the spammer will need to wait 5 minutes to run commands again.",
-		"value": 120000
+		"value": 300000
 	},
 	"stickerAuthor": {
 		"description": "Sets the author of the created stickers. Keep as default to generate automatic names based on group and user names. Keep the default (optional) to support official devs XD.",
