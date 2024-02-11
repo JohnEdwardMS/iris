@@ -149,6 +149,14 @@
                     "search",
                     "getsticker"
                 ],
+                "Convert": [
+                    "convert",
+                    "togif",
+                    "tomp4",
+                    "toimg",
+                    "toimage",
+                    "tovideo"
+                ],
                 "Games": [
                     "games",
                     "spin",
@@ -289,6 +297,14 @@
                     "g",
                     "gifsticker"
                 ],
+                "YouTube": [
+                    "play",
+                    "youtube",
+                    "video",
+                    "downvideo",
+                    "downaudio",
+                    "videosearch"
+                ],
                 "Handlers": [
                     "antifake",
                     "handlers",
@@ -319,6 +335,8 @@
                     "remove",
                     "promote",
                     "toadm",
+                    "warn",
+                    "unwarn",
                     "giveadm",
                     "demote",
                     "tiraradm",
