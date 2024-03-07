@@ -161,7 +161,7 @@
         "lotteryCooldown": {
             "description": "O tempo de cooldown da loteria em millisegundos após efetuar o sorteio.",
             "type": "Number",
-            "value": 3600000
+            "value": 600000
         },
         "lotteryExtra": {
             "description": "O valor de multiplicador dos ganhos, assim o valor sempre será um pouco acima do valor padrão.",

@@ -69,7 +69,7 @@
 	},
 	"owner": {
 		"description": "An array of users authorized to run any command.",
-		"value": ["9181490216@s.whatsapp.net"]
+		"value": ["559181490216@s.whatsapp.net"]
 	},
 	"pairingCode": { "value": false, "description": "Defines if the connection should use pairing code instead of qrcode, minified to help termux edition by sed." },
 	"prefixes": {
