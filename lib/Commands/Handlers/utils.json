@@ -18,7 +18,7 @@
             "/Goodbye -text -add {userm} saiu de {groupm}!",
             "/Antifake -add 55",
             "/Whitelist -add 551199876543210",
-            "/Language -add pt",
+            "/Language -text -add pt",
             "toggle.execute('kill', 'params')",
             "toggle.env()",
             "toggle.reset()",
@@ -27,6 +27,8 @@
     },
     "license": "MIT",
     "helps": [
+        "Alguns sistemas podem exigir que você insira tanto o '-text' como '-add', siga os exemplos atentamente, eventualmente você pegará o jeito!",
+        "O sistema spy permite saber quem demitiu um administrador ou qual administrador contratou outro administrador, evite sua ativação se planeja fazer demissões ou contratações em massa.",
         "O antispam deve conter o uso de '-set' para a configuração após ativar, o mesmo ocorre no antilinks.",
         "Se desejar inserir o nome do grupo, marcar o usuário nas mensagens ou enviar a descrição do grupo, basta inserir váriaveis, como '{userm}', '{groupm}' e '{desc}' nas suas mensagens customizadas.",
         "Existem diversas outras váriaveis, mas a maioria das funções é ultrasecreta, inútil ou somente o dono <TALVEZ> saberá como as usar, então elas se manterão em segredo, quem sabe você as descobre acidentalmente...",

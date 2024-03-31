@@ -1,30 +1,27 @@
 {
-    "name": "lottery",
-    "description": "Executar um sorteio similar a um bolão, rifa ou loteria",
+    "name": "saves",
+    "description": "Realizar operações financeiras como bank, pagamentos e doações.",
     "usage": {
-        "general": "[Prefix][Alias] [-buy|-time|-users] [Tickets]",
+        "general": "[Prefix][Alias] [@user|-time] [-coin/-diamond/-gold/-iron/-rubi/-stone/-wood] [value]",
         "examples": [
-            "/lottery",
-            "/giveaway -buy 5",
-            "/loteria -users",
-            "/ticket -time",
-            "/rifa --help",
-            "lottery.execute('kill', 'params')",
-            "lottery.env()",
-            "lottery.reset()",
-            "lottery.env().functions.execute.value('kill', 'params')"
+            "/Doar --help",
+            "/Pay @user -coin 1000 -wood -999",
+            "/Bank -get -coin 1000",
+            "/Save -wood 50",
+            "saves.execute('kill', 'params')",
+            "saves.env()",
+            "saves.reset()",
+            "saves.env().functions.execute.value('kill', 'params')"
         ]
     },
     "license": "MIT",
     "helps": [
-        "Quanto mais tickets você comprar, mais serão suas chances de vencer o sorteio.",
-        "A quantidade de ganho é derivada da quantidade de tickets comprados com um pequeno valor adicional.",
-        "Você ainda terá algum tempo para comprar mais tickets quando a contagem regressiva começar.",
-        "Você pode mudar os parâmetros da exports enviando o valor da Object que deseja editar ao resetar, por exemplo → lottery.reset({ name: 'Body'}) ← Isso mudaria o module de lottery para Body, o uso então passaria ser: → Body.funcão ← Isso também permite que você edite a função usando o mesmo método.",
-        "Você pode mudar o que os códigos rodam, em tempo real, basta usar a 'env', por exemplo → lottery.env().name = 'Body' ← Mas este método não atualizará o sistema, somente a Object, os sistemas permanecem intactos.",
-        "Você pode configurar o tempo de reset dos resultados ou se eles devem ser resetados usando a env, por exemplo → lottery.env().settings.wait = 10000 ← Isso mudaria o tempo de espera para 10 segundos, o tempo deve ser em milissegundos.",
-        "Alguém lê essas dicas? Se sim, torne-se um programador, ler os tutoriais é de suma importância e poucos desenvolvedores o fazem...",
-        "Existem infinitas formas de uso secretas, explore os códigos para descobrir os mistérios dos sistemas!"
+        "Caso a contagem de tempo se torne negativa, ou seja, você demore muito tempo para usar novamente, o uso do '-time' poderá estar incorreto, sendo que na verdade, seu uso já estará liberado.",
+        "Se você não marcar algúem enquanto estiver usando a função doar, ela será automaticamente transferida para a execução de uma transferência para sua própria conta bancária, tome cuidado.",
+        "Há um limite padrão de 10.000 (ou -10000) de doação, pagamentos ou operações de banco por uso, pois inserir valores maiores (ou menores negativos) pode causar problemas quando você possui valores elevados (ou absurdamente negativos) com você.",
+        "Apenas a primeira pessoa mencionada ganhará os valores doados ou pagos, outras pessoas serão ignoradas se mencionadas.",
+        "Você pode definir multiplos valores para o comando, como coin e wood, assim não precisa usar em um a um.",
+        "Note que ao chegar em determinado valor de level ou XP, você será reinicializado para o começo, pois conseguiu 'completar' o jogo."
     ],
     "exports": {
         "env": "env",
@@ -143,30 +140,44 @@
             "type": "Boolean / String",
             "value": false
         },
-        "ticketValue": {
-            "description": "O valor de cada ticket de loteria.",
+        "waitTime": {
+            "description": "Tempo que deve aguardar para poder usar novamente as funções, milissegundos.",
             "type": "Number",
-            "value": 10
+            "value": 1800000
         },
-        "lotteryUsers": {
-            "description": "O minimo de participantes da loteria.",
-            "type": "Number",
-            "value": 5
+        "emojiData": {
+            "description": "Define os emojis de cada valor possivel.",
+            "type": "Object",
+            "value": {
+                "coin": "💰",
+                "diamond": "💎",
+                "rubi": "🔴",
+                "stone": "🪨",
+                "gold": "🏆",
+                "iron": "🪙",
+                "wood": "🌲",
+                "xp": "📈",
+                "level": "🎚️",
+                "messages": "📬"
+            }
         },
-        "lotteryTime": {
-            "description": "O tempo de contagem regressiva em millisegundos após obter a quantidade de usuários, serve para novos participantes entrarem antes que a contagem encerre.",
+        "payLimit": {
+            "description": "Define o limite de doação ou bank das funções, note que valores muito altos podem levar a 'Infinity' ou 'Heap Out of Memory', cuidado.",
             "type": "Number",
-            "value": 300000
+            "value": 10000
         },
-        "lotteryCooldown": {
-            "description": "O tempo de cooldown da loteria em millisegundos após efetuar o sorteio.",
-            "type": "Number",
-            "value": 3600000
-        },
-        "lotteryExtra": {
-            "description": "O valor de multiplicador dos ganhos, assim o valor sempre será um pouco acima do valor padrão.",
-            "type": "Number",
-            "value": 0.4
+        "payAllowed": {
+            "description": "Define quais keys estão permitidas para doar, é necessário inserir '-' antes, pois isso é diretamente relacionado á variável 'body' no código.",
+            "type": "Array",
+            "value": [
+                "-coin",
+                "-diamond",
+                "-gold",
+                "-iron",
+                "-rubi",
+                "-stone",
+                "-wood"
+            ]
         }
     },
     "results": {
