@@ -131,6 +131,10 @@
 	},
 	"tagAdmins": {
 		"description": "Determines whether Íris should tag administrators when she detects and sends spam alerts in a group.",
+		"value": true
+	},
+    "taskerEval": {
+		"description": "Defines if should eval codes sent from apps like tasker, macrodroid or raw bash script, careful, this setting is DANGEROUS, do not enable if you have set a weak secretKey and yourName.",
 		"value": false
 	},
     "useBanner": {
