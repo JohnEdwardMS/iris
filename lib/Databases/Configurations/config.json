@@ -150,7 +150,7 @@
 		"value": 3
 	},
 	"yourName": {
-		"description": "Specifies the owner's name.",
+		"description": "Specifies the owner's name, required for tasker execution.",
 		"value": "John Matos"
 	}
 }
