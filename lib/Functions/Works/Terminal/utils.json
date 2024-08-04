@@ -208,7 +208,7 @@
         "httpsPort": {
             "description": "Porta HTTPS para acesso do terminal.",
             "type": "Boolean / Number",
-            "value": false
+            "value": 3000
         },
         "httpPort": {
             "description": "Porta HTTP para acesso do terminal, entrar causa redirecionamento para HTTPS.",
