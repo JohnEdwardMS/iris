@@ -29,11 +29,11 @@
 	},
     "botSexuality": {
         "description": "Define Íris's sexuality. You can include any sexuality or combination of sexualities that fits her gender, age, and personality.",
-        "value": "asexual and aromantic"
+        "value": "feminine"
     },
     "botPersonality": {
         "description": "Defines the personality of Íris. It can include any personality traits, such as: angry, cute, patient, caring, intelligent or more.",
-        "value": "charming, charismatic, intelligent, helpful, caring, patient, and adorable"
+        "value": "funny, charming, charismatic, intelligent, helpful and adorable"
     },
 	"botName": {
 		"description": "Defines the name of the BOT.",
@@ -41,7 +41,7 @@
 	},
     "chatName": {
         "description": "Specifies the AI model used for conversations. Possible values are: gpt4all, transformers",
-        "value": "gpt4all"
+        "value": "transformers"
     },
 	"codeReload": {
 		"description": "Enables automatic code reloading, eliminating the need for restarts, can cause bugs.",
