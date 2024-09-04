@@ -41,7 +41,7 @@
 	},
     "chatName": {
         "description": "Specifies the AI model used for conversations. Possible values are: gpt4all, transformers",
-        "value": "transformers"
+        "value": "gpt4all"
     },
 	"codeReload": {
 		"description": "Enables automatic code reloading, eliminating the need for restarts, can cause bugs.",
@@ -155,7 +155,7 @@
 	},
 	"spammerTime": {
 		"description": "Sets the time in milliseconds to block any commands sent by someone spamming. For example, if set to 300000, the spammer will need to wait 5 minutes to run commands again.",
-		"value": 300000
+		"value": 600000
 	},
 	"stickerAuthor": {
 		"description": "Sets the author of the created stickers. Keep as default to generate automatic names based on group and user names. Keep the default (optional) to support official devs XD.",
