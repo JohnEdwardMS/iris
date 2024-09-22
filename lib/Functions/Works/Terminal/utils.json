@@ -180,6 +180,11 @@
             "type": "Number",
             "value": 8
         },
+        "enableConsole": {
+            "description": "Define se deve abrir um servidor para o terminal web.",
+            "type": "Boolean",
+            "value": true
+        },
         "defaultUser": {
             "description": "Se configurado, define um nome de usuário estático que não mudará.",
             "type": "Boolean / String / Number",
@@ -201,9 +206,9 @@
             "value": 8
         },
         "httpsPort": {
-            "description": "Porta HTTPS para acesso do terminal, defina false para autómatico.",
+            "description": "Porta HTTPS para acesso do terminal.",
             "type": "Boolean / Number",
-            "value": 3000
+            "value": false
         },
         "httpPort": {
             "description": "Porta HTTP para acesso do terminal, entrar causa redirecionamento para HTTPS.",

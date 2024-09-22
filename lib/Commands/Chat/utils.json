@@ -2,13 +2,12 @@
     "name": "chat",
     "description": "Realizar conversas entre usuário e maquina.",
     "usage": {
-        "general": "[Prefix][Alias] [-gpt|-tts|-simsimi|-cleverbot] [-reset] [Text]",
+        "general": "[Prefix][Alias] [-gpt|-tts|-simsimi|-cleverbot] [Text]",
         "examples": [
             "/simsimi Hola",
             "/iris -cleverbot Boa noite",
             "/tts Oi, eu sou o Goku.",
             "/ai -gpt I love you.",
-            "/gpt -reset me fale sobre você!",
             "/chat --help",
             "chat.execute('kill', 'params')",
             "chat.env()",

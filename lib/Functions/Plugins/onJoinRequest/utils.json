@@ -2,19 +2,22 @@
     "name": "entry",
     "description": "Executar sistemas relacionados a permissão de entrada em grupos",
     "usage": {
-        "general": "[RESTRITO] - Verifique o 'examples' para usos inseguros.",
+        "general": "[Prefix][Alias] [Argumentos dele] (Valor se houver)",
         "examples": [
-            "entry.execute('kill', 'params')",
-            "entry.env()",
-            "entry.reset()",
-            "entry.env().functions.execute.value('kill', 'params')"
+            "/SeuComando",
+            "/SeuComando (Valor Se houver)",
+            "/SeuComando --help",
+            "oNameAcima.execute('kill', 'params')",
+            "oNameAcima.env()",
+            "oNameAcima.reset()",
+            "oNameAcima.env().functions.execute.value('kill', 'params')"
         ]
     },
     "license": "MIT",
     "helps": [
-        "Você pode mudar os parâmetros da exports enviando o valor da Object que deseja editar ao resetar, por exemplo → entry.reset({ name: 'Body'}) ← Isso mudaria o module de entry para Body, o uso então passaria ser: → Body.funcão ← Isso também permite que você edite a função usando o mesmo método.",
-        "Você pode mudar o que os códigos rodam, em tempo real, basta usar a 'env', por exemplo → entry.env().name = 'Body' ← Mas este método não atualizará o sistema, somente a Object, os sistemas permanecem intactos.",
-        "Você pode configurar o tempo de reset dos resultados ou se eles devem ser resetados usando a env, por exemplo → entry.env().settings.wait = 10000 ← Isso mudaria o tempo de espera para 10 segundos, o tempo deve ser em milissegundos.",
+        "Você pode mudar os parâmetros da exports enviando o valor da Object que deseja editar ao resetar, por exemplo → oNameAcima.reset({ name: 'Body'}) ← Isso mudaria o module de oNameAcima para Body, o uso então passaria ser: → Body.funcão ← Isso também permite que você edite a função usando o mesmo método.",
+        "Você pode mudar o que os códigos rodam, em tempo real, basta usar a 'env', por exemplo → oNameAcima.env().name = 'Body' ← Mas este método não atualizará o sistema, somente a Object, os sistemas permanecem intactos.",
+        "Você pode configurar o tempo de reset dos resultados ou se eles devem ser resetados usando a env, por exemplo → oNameAcima.env().settings.wait = 10000 ← Isso mudaria o tempo de espera para 10 segundos, o tempo deve ser em milissegundos.",
         "Alguém lê essas dicas? Se sim, torne-se um programador, ler os tutoriais é de suma importância e poucos desenvolvedores o fazem...",
         "Existem infinitas formas de uso secretas, explore os códigos para descobrir os mistérios dos sistemas!",
         "Dica ou conselho adicional aqui, se quiser botar mais é só ir gerando dentro dessa Array"
@@ -22,7 +25,7 @@
     "exports": {
         "env": "env",
         "messedup": "messedup",
-        "events": "events",
+        "exec": "execute",
         "reset": "reset",
         "poswork": "finish"
     },
@@ -56,15 +59,15 @@
             "type": "Boolean / Function",
             "value": false
         },
-        "events": {
+        "exec": {
             "arguments": {
                 "kill": {
                     "description": "Funções de controle raiz da Íris.",
                     "type": "Boolean / Object",
                     "value": false
                 },
-                "events": {
-                    "description": "Dados do evento recebido.",
+                "env": {
+                    "description": "Dados da mensagem recebida.",
                     "type": "Boolean / Object",
                     "value": false
                 }

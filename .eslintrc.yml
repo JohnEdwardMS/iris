@@ -7,8 +7,6 @@ parserOptions:
   ecmaVersion: latest
 rules:
   import/no-extraneous-dependencies: 0
-  import/no-unresolved: 0
-  no-inner-declarations: 0
   indent:
     - error
     - 4
@@ -16,8 +14,6 @@ rules:
 globals:
   config: true
   APIs: true
-  kill: true
-  internalSocket: true
   os: true
   tasksComplete: true
   region: true
